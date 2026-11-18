@@ -1,13 +1,13 @@
 {
   "template": "progress",
   "accent": "green",
-  "title": "Node.js compatibility by module",
-  "subtitle": "Official Node.js test files passing on main",
+  "title": "Release checklist by area",
+  "subtitle": "Completed validation scenarios",
   "items": [
-    { "label": "sqlite", "passed": 18, "total": 18 },
-    { "label": "http", "passed": 389, "total": 415 },
-    { "label": "http2", "passed": 259, "total": 280 },
-    { "label": "fs", "passed": 301, "total": 342 },
-    { "label": "worker_threads", "passed": 88, "total": 131 }
+    { "label": "accounts", "passed": 18, "total": 18 },
+    { "label": "search", "passed": 389, "total": 415 },
+    { "label": "billing", "passed": 259, "total": 280 },
+    { "label": "imports", "passed": 301, "total": 342 },
+    { "label": "notifications", "passed": 88, "total": 131 }
   ]
 }

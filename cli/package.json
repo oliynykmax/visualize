@@ -5,6 +5,7 @@
   "bin": { "visualize": "./visualize.ts" },
   "type": "module",
   "scripts": {
+    "build": "mkdir -p dist && bun build --compile --asset=../SKILL.md --outfile dist/visualize visualize.ts",
     "test": "bun test",
     "typecheck": "bun check"
   },

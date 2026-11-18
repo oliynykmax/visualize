@@ -1,11 +1,11 @@
 {
   "template": "line",
   "accent": "green",
-  "title": "Node.js test suite progress",
-  "subtitle": "Official Node.js test files passing on every commit",
-  "x": ["v1.2.0", "", "", "", "v1.3.0", "", "", "", "main"],
-  "series": [{ "name": "passing files", "values": [1480, 1620, 1950, 2180, 2226, 2230, 2240, 2900, 3743] }],
-  "threshold": { "value": 3693, "label": "The bar to ship v1.4: 3,693" },
-  "hero": { "value": "3,743", "caption": "on main today · +1,517 since v1.3.0" },
-  "annotations": [{ "at": 7, "label": "compat sprint" }]
+  "title": "Example rollout progress",
+  "subtitle": "Locations activated across the launch plan",
+  "x": ["Week 1", "", "", "", "Week 5", "", "", "", "Week 9"],
+  "series": [{ "name": "active locations", "values": [14, 22, 35, 48, 56, 61, 68, 82, 96] }],
+  "threshold": { "value": 90, "label": "Launch target: 90 locations" },
+  "hero": { "value": "96", "caption": "at Week 9 · +40 since Week 5" },
+  "annotations": [{ "at": 7, "label": "final rollout" }]
 }

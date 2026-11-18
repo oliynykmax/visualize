@@ -1,12 +1,12 @@
 {
   "template": "stats",
   "accent": "pink",
-  "title": "$ bun build *--compile --bytecode*",
-  "subtitle": "In the next version, compiled executables get",
+  "title": "Sample pipeline update",
+  "subtitle": "Illustrative change results",
   "tiles": [
     { "caption": "smaller binary", "metric": "size", "before": 428, "after": 284, "unit": "MB" },
     { "caption": "faster startup", "metric": "time", "before": 458, "after": 382, "unit": "ms" },
     { "caption": "less RAM", "metric": "memory", "before": 383, "after": 260, "unit": "MB" }
   ],
-  "footnote": "57 npm packages · 36 MB minified bundle · Linux x64 · medians vs v1.4.0"
+  "footnote": "Illustrative data generated for this example"
 }

@@ -2,6 +2,13 @@
 
 `visualize` turns a JSON specification into a 3200×1800 PNG card for benchmark results, release notes, PRs, reports, and slides. It derives deltas, ratios, percentages, and direction-aware wording from raw values so the text and graphic agree.
 
+<p align="center">
+  <img src="assets/catalog-refresh.png" alt="An illustrative catalog refresh comparison card" width="49%">
+  <img src="assets/queue-throughput.png" alt="An illustrative queue throughput chart" width="49%">
+</p>
+
+_The cards above use illustrative data generated for this README._
+
 ## Install
 
 ```sh
@@ -21,6 +28,16 @@ visualize --examples /tmp/visualize-examples
 ```
 
 `visualize --help` explains the JSON input and command line options. The complete specification is in [`references/spec.md`](references/spec.md), with ready-to-copy input files in [`examples/`](examples/).
+
+## Build a standalone CLI
+
+Build the standard local distribution with Bun's compiler. The resulting executable is self-contained and embeds the agent skill.
+
+```sh
+cd cli
+bun run build
+./dist/visualize --help
+```
 
 ## Built-in agent skill
 

@@ -1,16 +1,16 @@
 {
   "template": "columns",
   "accent": "orange",
-  "eyebrow": "bun:ffi · rewritten as engine-native FFI",
-  "title": "up to *3×* faster ffi",
-  "subtitle": "speedup vs the previous TinyCC-based bun:ffi",
+  "eyebrow": "ILLUSTRATIVE EXAMPLE",
+  "title": "up to *3×* faster image pipeline",
+  "subtitle": "speedup vs the previous processing path",
   "format": "ratio",
-  "baseline": { "value": 1, "label": "TinyCC = 1×" },
+  "baseline": { "value": 1, "label": "previous path = 1×" },
   "items": [
-    { "label": "noop call", "note": "2.27 ns → 763 ps", "value": 3.0, "highlight": true },
-    { "label": "new CString()", "note": "99.5 → 30 ns", "value": 3.3, "highlight": true },
-    { "label": "yoga layout ×1k", "note": "opentui benchmark", "value": 2.3, "highlight": true },
-    { "label": "scrollbox 10k", "note": "opentui benchmark", "value": 1.4, "highlight": true }
+    { "label": "thumbnail", "note": "2.3 s → 0.8 s", "value": 3.0, "highlight": true },
+    { "label": "color transform", "note": "3.3 s → 1.0 s", "value": 3.3, "highlight": true },
+    { "label": "contact sheet", "note": "illustrative batch", "value": 2.3, "highlight": true },
+    { "label": "archive preview", "note": "illustrative batch", "value": 1.4, "highlight": true }
   ],
-  "footnote": "macOS arm64 · opentui: unmodified 347-symbol app"
+  "footnote": "Illustrative data generated for this example"
 }

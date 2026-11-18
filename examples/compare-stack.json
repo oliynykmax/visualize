@@ -2,11 +2,11 @@
   "template": "compare",
   "layout": "stack",
   "accent": "violet",
-  "title": "CI typecheck memory: ~tsc~ → *bun check*",
+  "title": "Cache warmer memory: ~eager~ → *streaming*",
   "metric": "memory",
   "unit": "GiB",
   "hero": "ratio",
-  "before": { "label": "tsc", "value": 43.6 },
-  "after": { "label": "bun check", "value": 7.9 },
-  "footnote": "peak memory while type-checking the repo in CI · Oct 2026"
+  "before": { "label": "eager", "value": 43.6 },
+  "after": { "label": "streaming", "value": 7.9 },
+  "footnote": "Illustrative data generated for this example"
 }

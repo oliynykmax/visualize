@@ -1,26 +1,26 @@
 {
   "template": "table",
   "accent": "pink",
-  "title": "*v1.4.1* peak memory usage",
-  "subtitle": "Peak resident memory during 60 s of sustained load · lower is better",
+  "title": "*Current* peak memory usage",
+  "subtitle": "Illustrative sustained-load profile · lower is better",
   "metric": "memory",
   "unit": "MB",
   "rowHeader": "Peak RSS",
   "columns": [
-    { "label": "Bun", "sub": "1.4.1" },
-    { "label": "Bun", "sub": "1.4.0" },
-    { "label": "Bun", "sub": "1.3.14" },
-    { "label": "Node.js", "sub": "26.7" }
+    { "label": "Current", "sub": "adaptive" },
+    { "label": "Previous", "sub": "baseline" },
+    { "label": "Reference", "sub": "low-memory" },
+    { "label": "Legacy", "sub": "default" }
   ],
   "highlight": 0,
   "delta": { "against": 1 },
   "rows": [
-    { "label": "Fastify", "values": [94, 128, 163, 154] },
-    { "label": "Next.js SSR", "values": [265, 299, 1653, 387] },
-    { "label": "Vite dev", "values": [280, 296, 495, 243] },
-    { "label": "Elysia", "values": [54, 57, 75, 115] },
-    { "label": "Express", "values": [86, 89, 153, 143] },
-    { "label": "Hono", "values": [48, 47, 63, 121] }
+    { "label": "Catalog API", "values": [94, 128, 163, 154] },
+    { "label": "Search API", "values": [265, 299, 1653, 387] },
+    { "label": "Preview worker", "values": [280, 296, 495, 243] },
+    { "label": "Import worker", "values": [54, 57, 75, 115] },
+    { "label": "Report service", "values": [86, 89, 153, 143] },
+    { "label": "Webhook relay", "values": [48, 47, 63, 121] }
   ],
-  "footnote": "fixed request rate, 64 connections, VmHWM at end of load · Linux x64"
+  "footnote": "Illustrative data generated for this example"
 }

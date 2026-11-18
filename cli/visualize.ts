@@ -8,7 +8,9 @@ import { METRIC_KINDS, metric } from "./src/metrics";
 import { ACCENTS } from "./src/theme";
 
 const EXAMPLES = resolve(import.meta.dir, "../examples");
-const SKILL = resolve(import.meta.dir, "../SKILL.md");
+const SKILL = Bun.isStandaloneExecutable
+  ? resolve(import.meta.dir, "SKILL.md")
+  : resolve(import.meta.dir, "../SKILL.md");
 
 const HELP = `visualize: JSON spec in, 3200x1800 PNG card out. Built for agents.
 

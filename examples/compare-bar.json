@@ -2,10 +2,10 @@
   "template": "compare",
   "layout": "bar",
   "accent": "pink",
-  "title": "CI format check: ~oxfmt~ → *bun fmt*",
+  "title": "Report export: ~serial~ → *parallel*",
   "unit": "s",
   "hero": "ratio",
-  "before": { "label": "oxfmt", "value": 5.2 },
-  "after": { "label": "bun fmt", "value": 3.1 },
-  "footnote": "median format check of the whole repo in CI · Oct 2026"
+  "before": { "label": "serial", "value": 5.2 },
+  "after": { "label": "parallel", "value": 3.1 },
+  "footnote": "Illustrative data generated for this example"
 }

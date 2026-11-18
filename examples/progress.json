@@ -2,7 +2,7 @@
   "template": "progress",
   "theme": "cream",
   "accent": "pink",
-  "title": "*94%* of node:http tests pass",
-  "subtitle": "Node.js v26 test suite, one square per test file",
-  "items": [{ "label": "http", "passed": 389, "total": 415 }]
+  "title": "*94%* of sample scenarios pass",
+  "subtitle": "Illustrative release checklist, one square per scenario",
+  "items": [{ "label": "validation", "passed": 389, "total": 415 }]
 }

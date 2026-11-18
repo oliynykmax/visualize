@@ -2,9 +2,9 @@
   "template": "compare",
   "layout": "ring",
   "accent": "green",
-  "title": "CI typecheck: ~tsc~ → *bun check*",
+  "title": "Search indexing: ~fixed batch~ → *adaptive batch*",
   "unit": "s",
-  "before": { "label": "tsc", "value": 90 },
-  "after": { "label": "bun check", "value": 21 },
-  "footnote": "median time to type-check the repo in CI · tsc is TypeScript 7 (native) · Oct 2026"
+  "before": { "label": "fixed batch", "value": 90 },
+  "after": { "label": "adaptive batch", "value": 21 },
+  "footnote": "Illustrative data generated for this example"
 }
