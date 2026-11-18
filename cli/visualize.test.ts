@@ -87,6 +87,21 @@ test("table delta compares against the named column and hides small changes", ()
   expect(t).toEqual(expect.arrayContaining(["Δ", "vs old", "−27%", "–"]));
 });
 
+test("a table without delta keeps ordinary column subtitles", () => {
+  const t = texts(
+    build({
+      template: "table",
+      metric: "memory",
+      columns: [
+        { label: "current", sub: "adaptive" },
+        { label: "previous", sub: "baseline" },
+      ],
+      rows: [{ label: "api", values: [94, 128] }],
+    }),
+  );
+  expect(t).toEqual(expect.arrayContaining(["current", "adaptive", "previous", "baseline"]));
+});
+
 test("progress never rounds a partial pass up to 100%", () => {
   expect(texts(build({ template: "progress", items: [{ label: "x", passed: 999, total: 1000 }] }))).toContain("99%");
   expect(texts(build({ template: "progress", items: [{ label: "x", passed: 389, total: 415 }] }))).toContain("94%");

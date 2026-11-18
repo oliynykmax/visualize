@@ -80,8 +80,8 @@ export function render(m: Table, f: Frame): Body {
     cols.map((c) => {
       const col = m.columns[c.index];
       const label = c.kind === "delta" ? "Δ" : col.label;
-      const ref = m.columns[m.delta!.against];
-      const sub = c.kind === "delta" ? `vs ${ref.sub ? `${ref.label} ${ref.sub}` : ref.label}` : col.sub;
+      const ref = c.kind === "delta" ? m.columns[m.delta!.against] : undefined;
+      const sub = ref ? `vs ${ref.sub ? `${ref.label} ${ref.sub}` : ref.label}` : col.sub;
       const strong = c.kind === "value" && c.index === m.highlight;
       return cellBox(
         c,
