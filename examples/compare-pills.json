@@ -1,0 +1,12 @@
+{
+  "template": "compare",
+  "layout": "pills",
+  "accent": "blue",
+  "title": "CI lint: ~oxlint~ → *bun lint*",
+  "metric": "time",
+  "unit": "s",
+  "hero": "delta",
+  "before": { "label": "oxlint", "value": 42 },
+  "after": { "label": "bun lint", "value": 20 },
+  "footnote": "median time to lint the whole repo in CI, before and after the switch · Oct 2026"
+}

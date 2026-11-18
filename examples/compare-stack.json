@@ -1,0 +1,12 @@
+{
+  "template": "compare",
+  "layout": "stack",
+  "accent": "violet",
+  "title": "CI typecheck memory: ~tsc~ → *bun check*",
+  "metric": "memory",
+  "unit": "GiB",
+  "hero": "ratio",
+  "before": { "label": "tsc", "value": 43.6 },
+  "after": { "label": "bun check", "value": 7.9 },
+  "footnote": "peak memory while type-checking the repo in CI · Oct 2026"
+}

@@ -1,0 +1,18 @@
+{
+  "template": "bars",
+  "accent": "pink",
+  "eyebrow": "HTTP/2 over TLS · Linux x64",
+  "title": "Bun.serve() now speaks *HTTP/2*",
+  "subtitle": "Requests per second, longer is faster",
+  "metric": "throughput",
+  "series": ["Bun.serve()", "node:http2 in Bun", "node:http2 in Node.js"],
+  "rows": [
+    { "label": "Hello World", "note": "GET → 13 B response", "values": [291512, 55619, 42733] },
+    { "label": "POST 4 KB body", "note": "read body, small response", "values": [136077, 45366, 30112] },
+    { "label": "2 KB URL", "note": "GET with long path + query", "values": [113648, 43168, 31249] },
+    { "label": "64 KB response", "note": "GET → 64 KB body", "values": [17357, 13771, 12979] },
+    { "label": "Streaming", "note": "256 KB in → 32 KB out", "values": [4570, 4563, 2164] }
+  ],
+  "footnote": "64 cores · loopback · fresh server process per run",
+  "source": "h2load -c 64 -m 16 -t 8 -n 100000"
+}
