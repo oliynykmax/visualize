@@ -31,7 +31,7 @@ visualize --examples /tmp/visualize-examples
 
 ## Build a standalone CLI
 
-Build the standard local distribution with Bun's compiler. The resulting executable is self-contained and embeds the agent skill.
+Build the standard local distribution with Bun's compiler. The resulting executable uses Bun Canary's ahead-of-time compiler with stripping and embeds the agent skill.
 
 ```sh
 cd cli
