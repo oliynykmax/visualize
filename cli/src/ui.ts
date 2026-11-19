@@ -103,6 +103,11 @@ export function frame(f: Frame, { body, align = "left" }: Body): Node {
       f.title &&
         rich(f.title, f, { fontSize: 50, fontWeight: 700, letterSpacing: -1.2, lineHeight: 1.12, justifyContent: center ? "center" : "flex-start" }),
       f.subtitle && rich(f.subtitle, f, { fontSize: 25, color: t.muted, marginTop: 12, justifyContent: center ? "center" : "flex-start" }, t.fg),
+      f.nextVersionOf &&
+        span(
+          { fontSize: 19, fontWeight: 600, color: f.accent, marginTop: f.subtitle ? 12 : 10 },
+          `in the next version of ${f.nextVersionOf}`,
+        ),
     ),
     div({ flexGrow: 1, flexDirection: "column", marginTop: 28, minHeight: 0 }, body),
     (f.footnote || f.source) &&

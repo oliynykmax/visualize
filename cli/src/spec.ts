@@ -133,6 +133,7 @@ export type Frame = {
   eyebrow?: string;
   title?: string;
   subtitle?: string;
+  nextVersionOf?: string;
   footnote?: string;
   source?: string;
 };
@@ -146,6 +147,7 @@ export function readFrame(r: Reader): Frame {
     eyebrow: r.get("eyebrow").optText(70),
     title: r.get("title").optText(48),
     subtitle: r.get("subtitle").optText(100),
+    nextVersionOf: r.get("nextVersionOf").optText(56),
     footnote: r.get("footnote").optText(130),
     source: r.get("source").optText(60),
   };

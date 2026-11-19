@@ -63,6 +63,12 @@ test("unknown fields and text that may overflow come back as warnings", () => {
   expect(prepare(ci(42, 20)).warnings).toEqual([]);
 });
 
+test("nextVersionOf adds an optional release-context line", () => {
+  const card = prepare({ ...ci(42, 20), nextVersionOf: "Bun" });
+  expect(texts(card.node)).toContain("in the next version of Bun");
+  expect(card.warnings).toEqual([]);
+});
+
 test("spec errors name the offending path", () => {
   expect(() => build({ template: "pie" })).toThrow(/template: expected one of compare, stats, bars/);
   expect(() => build({ template: "bars", series: ["a", "b"], rows: [{ label: "x", values: [1] }] })).toThrow(/rows\[0\]\.values: expected at least 2 items/);

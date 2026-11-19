@@ -14,6 +14,7 @@ Unknown fields are ignored and reported in `warnings`. Text longer than roughly 
 | `eyebrow` | none | small uppercase line above the title |
 | `title` | none | headline. `*text*` is accent, `~text~` is muted, `→` draws an arrow |
 | `subtitle` | none | one line under the title, same markup (`~text~` there is full-strength) |
+| `nextVersionOf` | none | adds `in the next version of {value}` below the heading; use the product or project name as the value |
 | `footnote` | none | methodology line at the bottom left: machine, runs, versions, date |
 | `source` | none | monospace bottom-right text: the command or file that produced the numbers |
 
